@@ -1,9 +1,13 @@
+import Introduction from "./components/Introduction";
+import Technology from "./components/Technology";
+import Experience from "./components/Experience/Experience";
+
 export default function Home() {
   return (
-    <div className="intro">
-      <h1>Welcome.</h1>
-      <h2>My name is Jimmy.</h2>
-      <p>I am a developer that to dos the technology.</p>
-    </div>
+    <>
+      <Introduction />
+      <Technology />
+      <Experience />
+    </>
   );
 }
