@@ -4,10 +4,13 @@ import Experience from "./components/Experience/Experience";
 
 export default function Home() {
   return (
-    <>
-      <Introduction />
-      <Technology />
-      <Experience />
-    </>
+    <div className="container">
+      <div className="intro-container">
+        <div id="intro">
+          <Introduction />
+        </div>
+      </div>
+      <div className="blog-container">blog</div>
+    </div>
   );
 }

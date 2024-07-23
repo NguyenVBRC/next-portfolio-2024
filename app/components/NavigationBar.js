@@ -1,6 +1,6 @@
 export default function NavigationBar() {
   return (
-    <nav>
+    <nav className="nav-bar">
       <img className="nav-logo" src="/jLogo.png" alt="Logo" />
     </nav>
   );
