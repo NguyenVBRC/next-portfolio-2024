@@ -1,6 +1,6 @@
-export default function JobDetails(details) {
+export default function JobDetails({ details }) {
   return (
-    <div>
+    <div className="details">
       <h3>{details.title}</h3>
       <p>{details.location}</p>
       <p>{details.description}</p>
