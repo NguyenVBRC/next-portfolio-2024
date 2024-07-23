@@ -1,6 +1,5 @@
 import Introduction from "./components/Introduction";
-import Technology from "./components/Technology";
-import Experience from "./components/Experience/Experience";
+import Details from "./components/details/Details";
 
 export default function Home() {
   return (
@@ -9,6 +8,7 @@ export default function Home() {
         <div id="intro">
           <Introduction />
         </div>
+        <Details />
       </div>
       <div className="blog-container">blog</div>
     </div>

@@ -17,6 +17,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
+  height: 60px; /* Adjust the height as needed */
 }
 
 .nav-logo {
@@ -32,7 +33,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: calc(100vh - 60px); /* Subtract the height of the navbar */
+  padding-top: 60px; /* Push the content below the navbar */
 }
 
 .intro-container {
@@ -51,6 +53,58 @@ body {
   height: 50%;
 }
 
+/* Details */
+.details-container {
+  height: 40%;
+}
+
+.details-bar {
+  border-bottom: solid 1px white;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  text-align: center;
+}
+
+.details-container p {
+  border-radius: 5px;
+  margin: 3px;
+  padding: 0.75rem 1rem;
+}
+
+.tech {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+#isActive {
+  background-color: darkgray;
+}
+
+.details-bar p:hover {
+  cursor: pointer;
+}
+
+/* Experience Container */
+.exp-container {
+  height: 100%;
+  overflow-y: auto; /* Enable vertical scroll */
+  padding: 1em;
+  box-sizing: border-box;
+  margin-top: 2rem;
+}
+
+#history-container {
+  border: solid 1px white;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Blog */
 .blog-container {
   text-align: center;
   width: 50%;

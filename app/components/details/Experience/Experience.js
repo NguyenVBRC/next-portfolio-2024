@@ -3,15 +3,14 @@ import workHistory from "./workHistory.json";
 
 export default function Experience() {
   return (
-    <>
-      <h2>My Experience</h2>
+    <div className="exp-container">
       {workHistory.map((work) => {
         return (
-          <div key={work.title}>
+          <div key={work.title} id="history-container">
             <JobDetails details={work} />
           </div>
         );
       })}
-    </>
+    </div>
   );
 }
